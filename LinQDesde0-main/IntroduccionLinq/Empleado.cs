@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace IntroduccionLinq
 {
-    public  class Empleado
+    // Definición de la clase Empleado que lo representa con un nombre
+    public class Empleado
     {
+
+        // Propiedad para almacenar el nombre del empleado
         public string nombre { get; set; }
     }
 }
