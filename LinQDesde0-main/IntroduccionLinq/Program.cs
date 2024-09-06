@@ -6,6 +6,7 @@ using IntroduccionLinq;
 Este código filtra un arreglo de palabras, seleccionando solo aquellas que tienen más de 5 letras, 
 y luego las imprime en la consola.
 */
+
 /*string[]palabras;
 palabras = new string[] { "gato", "perro", "lagarto", "tortuga", "cocdrilo","serpiente", "123456789" };
 Console.WriteLine("Mas de 5 letras");
@@ -23,10 +24,12 @@ foreach (var r in resultado)
 */
 #endregion
 #region utilizando Linq
+
 /*
 Este utiliza LINQ para seleccionar palabras del arreglo que tengan más de 8 letras 
 y luego las imprime en la consola.
 */
+
 /*Console.WriteLine("-----------------------------------------------------");    
 IEnumerable<string> list = from r in palabras where r.Length > 8 select r;
 foreach(var listado in list)
@@ -35,14 +38,18 @@ Console.WriteLine("-----------------------------------------------------");
 */
 #endregion
 #region ListaModelos
+
 /*
 Se crean dos listas, una para almacenar objetos de tipo Casa y otra para objetos de tipo Habitante.
 */
+
 List<Casa> ListaCasas = new List<Casa>();
 List<Habitante> ListaHabitantes = new List<Habitante>();
 #endregion
 #region listaCasa
-// Se agregan varios objetos de tipo Casa a la lista ListaCasas, cada uno con su respectiva información como Id, Dirección, Ciudad y número de habitaciones.
+// Se agregan varios objetos de tipo Casa a la lista ListaCasas, cada uno con su respectiva información como Id,
+// Dirección, Ciudad y número de habitaciones.
+
 ListaCasas.Add(new Casa { 
     Id=1,
     Direccion= "3 av Norte ArcanCity",
@@ -65,6 +72,7 @@ ListaCasas.Add(new Casa{
 #region ListaHabitante
 // Se agregan varios objetos de tipo Habitante a la lista ListaHabitantes,
 // cada uno con sus datos como IdHabitante, Nombre, Edad e IdCasa.
+
 ListaHabitantes.Add(new Habitante { 
     IdHabitante= 1,
     Nombre = "Bruno Diaz",
@@ -184,7 +192,7 @@ Console.WriteLine("existe !Si existe!");
 #endregion
 #region Last
 /*
-Aqu[i muestra el uso de las funciones `Last` y `LastOrDefault` para obtener el último elemento 
+Aquí muestra el uso de las funciones `Last` y `LastOrDefault` para obtener el último elemento 
 de una lista que cumple una condición. `Last` lanza una excepción si no encuentra un elemento, mientras que 
 `LastOrDefault` devuelve `null` si no encuentra coincidencias.
 */
@@ -239,7 +247,8 @@ catch (Exception) {
 #endregion
 #region typeOf
 /*
-Uso de `OfType<T>()` para filtrar elementos de una lista según su tipo, en este caso, para obtener solo objetos de tipo `Medico`.
+Uso de `OfType<T>()` para filtrar elementos de una lista según su tipo, en este caso, para obtener solo objetos de tipo 
+`Medico`.
 */
 
 /* var listaEmpleados = new List<Empleado>() { 
